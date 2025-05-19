@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %} Bem-vindo {% endblock title %} {%
+block content %}
+<div class="hero">
+  <div class="hero-content">
+    <div class="left">
+      <h1>Sou Programador</h1>
+      <h1>Diego de Jesus Paula</h1>
+      <p>
+        Construo aplicações em Python dinámicas utilizando bases de dados
+        relacionais
+      </p>
+      <a href="#contacto" class="btn">Entre em contato</a>
+    </div>
+    <div class="right">
+      <img src="{{ url_for('static', filename='Diego.jpg') }}" width="600px" />
+    </div>
+  </div>
+</div>
+
+{% include 'portfolio/section-first.html' %}
+{% endblock content %}
